@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/GameFragment">
+
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.example.myapplication.GameFragment"
+        android:label="@string/game_fragment_label"
+        tools:layout="@layout/fragment_game">
+
+        <action
+            android:id="@+id/action_GameFragment_to_ScoreFragment"
+            app:destination="@id/ScoreFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_GameFragment_to_GameFragment"
+            app:destination="@id/GameFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_GameFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_GameFragment_to_windowFragment"
+            app:destination="@id/windowFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/ScoreFragment"
+        android:name="com.example.myapplication.ScoreFragment"
+        android:label="@string/score_fragment_label"
+        tools:layout="@layout/fragment_score">
+
+        <action
+            android:id="@+id/action_ScoreFragment_to_GameFragment"
+            app:destination="@id/GameFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_ScoreFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment"
+            app:enterAnim="@anim/fade_in" />
+        <action
+            android:id="@+id/action_ScoreFragment_to_windowFragment"
+            app:destination="@id/windowFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.myapplication.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@xml/root_preferences">
+
+        <action
+            android:id="@+id/action_SettingsFragment_to_GameFragment"
+            app:destination="@id/GameFragment"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_ScoreFragment"
+            app:destination="@id/ScoreFragment"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_SettingsFragment_to_windowFragment"
+            app:destination="@id/windowFragment"
+            app:enterAnim="@anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/windowFragment"
+        android:name="com.example.myapplication.WindowFragment"
+        android:label="WindowFragment"
+        tools:layout="@layout/fragment_windows">
+        <action
+            android:id="@+id/action_windowFragment_to_ScoreFragment"
+            app:destination="@id/ScoreFragment"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_windowFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_windowFragment_to_GameFragment"
+            app:destination="@id/GameFragment"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+</navigation>

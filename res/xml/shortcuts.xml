@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="reset"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:shortcutShortLabel="@string/shortcut_short"
+        android:shortcutLongLabel="@string/shortcut_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.myapplication"
+            android:targetClass="com.example.myapplication.MainActivity" >
+            <extra
+                android:name="mix_match.reset"
+                android:value="true"/>
+        </intent>
+    </shortcut>
+</shortcuts>

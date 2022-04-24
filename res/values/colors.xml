@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBackground">#2196F3</color>
+    <color name="colorBackgroundDark">#080C0C</color>
+    <color name="dialogDark">#707070</color>
+
+    <array name="light_mode_blue">
+        <item>#3700B3</item>
+        <item>#0000FF</item>
+        <item>#FFFF00</item>
+        <item>#00FF00</item>
+        <item>#FF0000</item>
+        <item>#6200EE</item>
+        <item>#3700B3</item>
+        <item>#5200CC</item>
+        <item>#03DAC5</item>
+    </array>
+
+    <array name="dark_mode_blue">
+        <item>#606060</item>
+        <item>#525252</item>
+        <item>#0C802C</item>
+        <item>#2F4F4F</item>
+        <item>#9A0C24</item>
+        <item>#3700B3</item>
+        <item>#6200EE</item>
+        <item>#270093</item>
+        <item>#0C2C80</item>
+    </array>
+    <array name="light_mode_red">
+        <item>#7A0C24</item>
+        <item>#BF0000</item>
+        <item>#FFFF00</item>
+        <item>#00FF00</item>
+        <item>#370037</item>
+        <item>#CC3300</item>
+        <item>#550000</item>
+        <item>#AA3300</item>
+        <item>#770000</item>
+    </array>
+
+    <array name="dark_mode_red">
+        <item>#606060</item>
+        <item>#525252</item>
+        <item>#AC9712</item>
+        <item>#0C802C</item>
+        <item>#330120</item>
+        <item>#550000</item>
+        <item>#CC3300</item>
+        <item>#440000</item>
+        <item>#AA3300</item>
+    </array>
+
+    <array name="light_mode_green">
+        <item>#9A0C24</item>
+        <item>#760C21</item>
+        <item>#FFFF00</item>
+        <item>#00FF00</item>
+        <item>#FF0000</item>
+        <item>#11AA22</item>
+        <item>#008800</item>
+        <item>#118822</item>
+        <item>#FFAA00</item>
+    </array>
+
+    <array name="dark_mode_green">
+        <item>#606060</item>
+        <item>#525252</item>
+        <item>#AAAA00</item>
+        <item>#12AC21</item>
+        <item>#9A0C24</item>
+        <item>#008800</item>
+        <item>#11AA22</item>
+        <item>#006600</item>
+        <item>#003000</item>
+    </array>
+
+    <array name="light_mode_purple">
+        <item>#370013</item>
+        <item>#740021</item>
+        <item>#FFFF00</item>
+        <item>#00FF00</item>
+        <item>#FF0000</item>
+        <item>#961265</item>
+        <item>#550055</item>
+        <item>#761255</item>
+        <item>#B34AD5</item>
+    </array>
+
+    <array name="dark_mode_purple">
+        <item>#606060</item>
+        <item>#525252</item>
+        <item>#6C802C</item>
+        <item>#12AC21</item>
+        <item>#9A0C24</item>
+        <item>#550055</item>
+        <item>#961265</item>
+        <item>#440044</item>
+        <item>#550175</item>
+    </array>
+
+</resources>

@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reset_settings"
+        android:orderInCategory="101"
+        android:title="@string/action_reset_settings" />
+
+    <item
+        android:id="@+id/action_play_from_seed"
+        android:orderInCategory="102"
+        android:title="@string/action_play_from_seed" />
+
+    <item
+        android:id="@+id/action_select_theme"
+        android:orderInCategory="103"
+        android:title="@string/action_select_window" />
+</menu>

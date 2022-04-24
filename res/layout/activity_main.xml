@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.example.myapplication.GameFragment"
+        android:id="@+id/GameFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_game" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.example.myapplication.ScoreFragment"
+        android:id="@+id/ScoreFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_score" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.example.myapplication.DialogSeedFragment"
+        android:id="@+id/DialogSeedFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_seed_dialog" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:contentDescription="@string/fab_dark_mode" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="88dp"
+        app:srcCompat="@android:drawable/stat_notify_sync_noanim"
+        android:contentDescription="@string/fab_restart" />
+
+    <!-- ad? -->
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

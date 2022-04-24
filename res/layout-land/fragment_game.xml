@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@id/progress_bar_full"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/goal_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_full"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="20dp"
+        android:layout_height="340dp"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress_drawable_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/barrier"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="button_add, button_multiply" />
+
+    <ImageButton
+        android:id="@+id/button_add"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/image_button_plus"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toStartOf="@id/button_subtract"
+        app:layout_constraintStart_toEndOf="@id/progress_bar_full"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_multiply"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/image_button_multiply"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/button_add"
+        app:layout_constraintEnd_toStartOf="@id/button_divide"
+        app:layout_constraintStart_toEndOf="@id/progress_bar_full" />
+
+    <ImageButton
+        android:id="@+id/button_subtract"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/image_button_minus"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toEndOf="@id/button_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_divide"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/image_button_divide"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/button_subtract"
+        app:layout_constraintStart_toEndOf="@id/button_multiply"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/hBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="button_divide, button_multiply" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hBarrier"
+        app:layout_constraintBottom_toTopOf="@id/button_undo">
+
+        <LinearLayout
+            android:id="@+id/input_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button_undo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/undo"
+        android:textSize="40sp"
+        android:textColor="@color/button_tint"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:includeFontPadding="false"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

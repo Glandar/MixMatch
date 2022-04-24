@@ -1,0 +1,180 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <PreferenceCategory app:title="@string/score_ratio_header">
+
+        <SeekBarPreference
+            app:key="scoreRatio"
+            app:title="@string/score_ratio"
+            app:showSeekBarValue="true"
+            app:defaultValue="100" />
+
+        <SeekBarPreference
+            app:dependency="allowUndo"
+            app:key="undoPenalty"
+            app:title="@string/undo_penalty"
+            app:showSeekBarValue="true"
+            app:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/numbers_header">
+
+        <EditTextPreference
+            app:key="startMax"
+            app:title="@string/start_numbers"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="50" />
+
+        <EditTextPreference
+            app:key="goalMax"
+            app:title="@string/goal_numbers"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="1000" />
+
+        <EditTextPreference
+            app:key="inputMax"
+            app:title="@string/input_numbers"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="10" />
+
+        <EditTextPreference
+            app:key="base"
+            app:title="@string/base_numbers"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="10" />
+
+        <ListPreference
+            app:key="cipher"
+            app:title="@string/cipher"
+            app:useSimpleSummaryProvider="true"
+            app:entries="@array/cipher_entries"
+            app:entryValues="@array/cipher_values"
+            app:defaultValue="n" />
+
+        <CheckBoxPreference
+            app:key="prefixZero"
+            app:title="@string/prefix_zeros"
+            app:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/stacks_header">
+
+        <EditTextPreference
+            app:key="goalAmount"
+            app:title="@string/goal_amount"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="3" />
+
+        <EditTextPreference
+            app:key="stackSize"
+            app:title="@string/stacks_amount"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="0" />
+
+        <ListPreference
+            app:key="anyMatch"
+            app:title="@string/match_any"
+            app:useSimpleSummaryProvider="true"
+            app:entries="@array/match_entries"
+            app:entryValues="@array/match_values"
+            app:defaultValue="l" />
+
+        <SwitchPreferenceCompat
+            app:key="stackSeparate"
+            app:title="@string/stacks_strict_division"
+            app:defaultValue="true"
+            app:singleLineTitle="false" />
+
+        <SwitchPreferenceCompat
+            app:key="preCalcGoal"
+            app:title="@string/pre_calculate"
+            app:defaultValue="false"
+            app:singleLineTitle="false" />
+
+        <CheckBoxPreference
+            app:dependency="preCalcGoal"
+            app:key="showPreCalc"
+            app:title="@string/show_pre_calculate"
+            app:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/input_header">
+
+        <EditTextPreference
+            app:key="inputSize"
+            app:title="@string/input_amount"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="3" />
+
+        <SwitchPreferenceCompat
+            app:key="inputAllEditable"
+            app:title="@string/input_all_editable"
+            app:defaultValue="true"
+            app:singleLineTitle="false"
+            app:disableDependentsState="true" />
+
+        <EditTextPreference
+            app:dependency="inputAllEditable"
+            app:key="inputAmountEditable"
+            app:title="@string/input_editable_amount"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="3" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/buttons_header">
+
+        <CheckBoxPreference
+            app:key="allowUndo"
+            app:title="@string/operation_undo"
+            app:defaultValue="true" />
+
+        <CheckBoxPreference
+            app:key="addEnable"
+            app:title="@string/operation_addition"
+            app:defaultValue="true" />
+
+        <CheckBoxPreference
+            app:key="divEnable"
+            app:title="@string/operation_division"
+            app:defaultValue="true" />
+
+        <CheckBoxPreference
+            app:key="subEnable"
+            app:title="@string/operation_subtraction"
+            app:defaultValue="true" />
+
+        <CheckBoxPreference
+            app:key="mulEnable"
+            app:title="@string/operation_multiplication"
+            app:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/visuals">
+
+        <SeekBarPreference
+            app:key="textSize"
+            app:title="@string/text_size"
+            app:showSeekBarValue="true"
+            app:defaultValue="100"
+            android:max="300" />
+
+        <SeekBarPreference
+            app:key="inputLine"
+            app:title="@string/input_line"
+            app:showSeekBarValue="true"
+            app:defaultValue="48" />
+
+        <SeekBarPreference
+            app:key="buttonLine"
+            app:title="@string/button_line"
+            app:showSeekBarValue="true"
+            app:defaultValue="64" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

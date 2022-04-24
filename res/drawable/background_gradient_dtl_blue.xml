@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/colorPrimaryDark"
+                android:endColor="@color/colorBackgroundDark"
+                android:angle="225"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/colorPrimary"
+                android:endColor="@color/colorBackground"
+                android:angle="225"/>
+        </shape>
+    </item>
+</transition>

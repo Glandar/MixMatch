@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Mix and Match</string>
+
+    <!-- Menu actions -->
+    <string name="action_settings">Settings</string>
+    <string name="action_reset_settings">Restore Settings To Default</string>
+    <string name="action_play_from_seed">Play From Seed</string>
+    <string name="action_select_window">Select Color Theme</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="game_fragment_label">First Fragment</string>
+    <string name="score_fragment_label">Second Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+
+    <!-- Floating action button descriptions -->
+    <string name="fab_restart">Restart the game with a new seed</string>
+    <string name="fab_dark_mode">Switch between light- and dark-mode</string>
+
+    <!-- (Button) default names -->
+    <string name="retry">Same seed</string>
+    <string name="reSeed">New seed </string>
+    <string name="nextSeed">Seed++</string>
+    <string name="add">+</string>
+    <string name="multiply">*</string>
+    <string name="subtract">-</string>
+    <string name="undo">undo</string>
+    <string name="divide">/</string>
+    <string name="seed">Seed: %1$d</string>
+    <string name="settings">Settings: %1$s</string>
+    <string name="moves">Moves: %1$d</string>
+    <string name="time">Time: %1$.2f</string>
+    <string name="number">0</string>
+
+    <!-- Dialog window -->
+    <string name="dialog_seed">Seed</string>
+    <string name="set_dialog_seed">Set seed</string>
+    <string name="dialog_settings">Settings</string>
+    <string name="set_dialog_settings">Set settings</string>
+    <string name="play">Play with seed and settings</string>
+
+    <!-- Preference Titles -->
+    <string name="score_ratio_header">Scoring</string>
+    <string name="numbers_header">Numbers</string>
+    <string name="input_header">Runtime generated numbers</string>
+    <string name="buttons_header">Operations</string>
+    <string name="stacks_header">Goal stacks</string>
+    <string name="visuals">Thematics</string>
+
+    <!-- Score Preferences -->
+    <string name="score_ratio">Moves/Time ratio</string>
+    <string name="undo_penalty">Penalty time for using undo (100ms)</string>
+
+    <!-- Numbers Preferences -->
+    <string name="start_numbers">Max starting numbers</string>
+    <string name="input_numbers">Max usable numbers</string>
+    <string name="goal_numbers">Max goal numbers</string>
+    <string name="base_numbers">Base of the numbers</string>
+    <string name="cipher">Cipher used to encode numbers</string>
+    <string name="prefix_zeros">Prefix numbers with zeros</string>
+
+    <!-- Input Preferences -->
+    <string name="input_amount">Amount of visible usable numbers</string>
+    <string name="input_all_editable">All visible usable numbers are editable</string>
+    <string name="input_editable_amount">Amount of visible numbers that are editable</string>
+
+    <!-- Operations Preferences -->
+    <string name="operation_addition">Enable addition</string>
+    <string name="operation_subtraction">Enable subtraction</string>
+    <string name="operation_multiplication">Enable multiplication</string>
+    <string name="operation_division">Enable division</string>
+    <string name="operation_undo">Allow undo</string>
+
+    <!-- Stack Preferences -->
+    <string name="goal_amount">Amount of goal stacks</string>
+    <string name="stacks_amount">Amount of goal numbers in stack</string>
+    <string name="match_any">Matching directions</string>
+    <string name="stacks_strict_division">Pull goal numbers from a single stack</string>
+    <string name="pre_calculate">Calculate the goal stack(s) beforehand</string>
+    <string name="show_pre_calculate">Allow the stack(s) to be seen</string>
+
+    <!-- Thematics Preferences -->
+    <string name="text_size">Adjusted text size</string>
+    <string name="input_line">Goal/usable division</string>
+    <string name="button_line">Usable/button division</string>
+
+    <!-- Shortcut -->
+    <string name="shortcut_short">Reset</string>
+    <string name="shortcut_long">Restore default settings</string>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <!-- Cipher Preference -->
+    <string-array name="cipher_entries">
+        <item>None</item>
+        <item>Caesar cipher</item>
+        <item>Pair switch cipher</item>
+        <item>Random cipher</item>
+    </string-array>
+
+    <string-array name="cipher_values">
+        <item>n</item> <!-- none -->
+        <item>c</item> <!-- caesar -->
+        <item>p</item> <!-- pairwise -->
+        <item>r</item> <!-- random -->
+    </string-array>
+
+    <!-- Matching Preference -->
+    <string-array name="match_entries">
+        <item>Match only within the same line</item>
+        <item>Match to every goal</item>
+        <item>Match from every input</item>
+    </string-array>
+
+    <string-array name="match_values">
+        <item>l</item> <!-- linear -->
+        <item>g</item> <!-- match goals -->
+        <item>i</item> <!-- match inputs -->
+    </string-array>
+</resources>
