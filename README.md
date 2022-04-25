@@ -15,3 +15,7 @@ For extra challenges the app can encrypt the numbers (ceasar, pairwise or random
 Bugs
 ----
 There are no known bugs. If you encounter a bug by altering the settings which makes the game unplayable the settings need to be reset. This can be done by holding the app icon on the homscreen and pressing "reset".
+
+Demo
+----
+https://user-images.githubusercontent.com/104028735/165173871-0739519c-db5f-4f0c-9662-c573c25069b1.mp4
